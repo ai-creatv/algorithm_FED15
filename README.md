@@ -5,6 +5,7 @@
 - 초급 단계의 코딩 테스트 문제를 직접 해결할 수 있다.
 
 ## Contents
+
 ### What's In
 - JavaScript의 기본 Library를 이용하여 자료구조를 구현한다.
 - JavaScript를 이용해 기초적인 알고리즘을 구현한다.
