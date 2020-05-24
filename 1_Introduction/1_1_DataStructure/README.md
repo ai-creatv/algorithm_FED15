@@ -43,3 +43,10 @@
 ## 자료구조의 필요성
 
 ## JavaScript와 자료구조
+
+- JavaScript에는 몇가지 자료구조가 Class로 구현되어 있다. Reference를 참고하여 확인해 보자.
+  - Array
+    - Queue(shift, pop), Stack(push, pop)
+  - Map
+    - Hash table
+  - Set

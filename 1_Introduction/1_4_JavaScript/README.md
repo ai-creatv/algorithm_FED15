@@ -11,16 +11,16 @@
 ### Variables
 
 - var (ES5)
-  - var의 scope
 - let, const (ES6)
-  - let, const의 scope
+- Variable scopes
 
-### Loops
+### Loops and Iterations
 
 - for
 - for ... in (ES5)
 - for ... of (ES6)
 - forEach
+- while, do ... while
 
 ### Loop Control
 
@@ -29,11 +29,30 @@
 
 ### Functions
 
-- Defined functions
-- Assigned functions
+- Function statements
+- Function expressions
 - Arrow functions
+
+### Object-Oriented Programming
+
+- Function constructors (ES5)
+- Classes (ES6)
+- Subclasses (ES6)
 
 ### Others
 
-- Spread Operator
-- 
+- Ternary operator
+- Spread operator
+- Destructuring
+- Maps
+
+## 좋은 습관/나쁜 습관
+
+- var, let, const
+- Semi colons
+- Equal operators
+
+## JavaScript References
+
+- <https://devdocs.programmers.co.kr/javascript/>
+- <https://developer.mozilla.org/ko/docs/Web/JavaScript>
