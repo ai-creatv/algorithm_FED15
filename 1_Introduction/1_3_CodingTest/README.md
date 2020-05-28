@@ -14,7 +14,7 @@
 
 ## 출제 유형
 
-- ㄹ
+- TODO
 
 ## JavaScript와 Coding Test
 
