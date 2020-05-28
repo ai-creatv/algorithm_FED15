@@ -138,12 +138,13 @@
           }
       }
   }
-  label:
+  loop1:
   for(let subArray of array) {
+      loop2:
       for(let val of subArray) {
           console.log(val);
           if(val == 6) {
-              break label;
+              break loop1;
           }
       }
   }
@@ -265,7 +266,7 @@
   ```javascript
   const a = 10;
   const s = 'Dollars';
-  console.log('I Have ' + a + ' ' + s + '.');  // ES5
+  console.log('I have ' + a + ' ' + s + '.');  // ES5
   console.log(`I have ${a} ${s}.`);  // ES6
   ```
 
