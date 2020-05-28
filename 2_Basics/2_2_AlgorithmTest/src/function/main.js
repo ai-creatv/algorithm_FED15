@@ -16,7 +16,7 @@ function readTestFile(fileName) {
     return parsedInputs
 }
 
-function algorithm(a) {
+function solution(a) {
     let answer = a[0] + a[1]
     return answer
 }
@@ -34,7 +34,7 @@ fs.readdir(pathDir, (err, files) => {
         const parsedInputs = readTestFile(path.join(pathDir, file));
 
         const tStart = new Date().getTime();
-        answer = algorithm(...parsedInputs);
+        answer = solution(...parsedInputs);
         console.log(answer);
         const tDiff = new Date().getTime() - tStart;
         
