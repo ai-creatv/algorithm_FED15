@@ -8,7 +8,7 @@
 
 ## Node.js를 이용한 입출력 구현
 
-<img src="img/1.png" height="300"/>
+<img src="img/1.png" height="300"></img>
 
 - 구글 크롬 자바스크립트 엔진 (V8 Engine) 기반으로 만들어진 서버사이드 플랫폼
   - Node.js로 코드를 실행할 경우 웹 브라우저를 사용하지 않아도 됨
@@ -23,19 +23,19 @@
 
 - JetBrains IDEs
   - IntelliJ IDEA
-<img src="img/2.png" height="300"/>
+<img src="img/2.png" height="300"></img>
     - 현업에서 가장 많이 사용되는 JVM 개발 툴
     - Community 버전은 무료이지만, 기능 제한이 많음 (Framework, JavaScript 미지원)
     - Ultimate 버전은 1년 구독에 $499으로... 꽤 비싼 단점이 있음
       - 이미 구매한 경우 쓰면 좋지만.. 프론트엔드 개발자가 굳이 구매할 필요는 없음
   - WebStorm
-<img src="img/3.png" height="300"/>
+<img src="img/3.png" height="300"></img>
     - JavaScript 개발을 위한 IDE. React, Vue, Angular를 지원
     - Community 버전이 없으며, 1년 구독에 $129으로, 비교적 저렴함
       - Fallback License로, 구매한 시기에 따라 특정 버전 영구 이용
     - 30일 무료 체험
 - VisualStudio Code
-<img src="img/4.png" height="300"/>
+<img src="img/4.png" height="300"></img>
   - 무료로 사용할 수 있는 오픈소스 Text Editor
   - 다양한 플러그인이 제공되어, 거의 모든 언어에 대한 IDE를 구성할 수 있음
   - 다양한 언어의 Linting, Build, Test 등 다양하게 활용 가능
