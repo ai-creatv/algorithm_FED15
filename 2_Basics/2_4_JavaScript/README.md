@@ -203,7 +203,7 @@
       }
   }
   const person = new Person('Jane', 22);
-  consoel.log(person);
+  console.log(person);
   ```
 
 - Subclasses (ES6)
@@ -222,7 +222,7 @@
       }
   }
   const student = new Studnet('Jane', 22, 'English');
-  consoel.log(student);
+  console.log(student);
   ```
 
 ### Others
