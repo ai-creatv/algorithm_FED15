@@ -43,6 +43,8 @@ console.log(count);
 
 - 분석: 반복문과 조건문을 고려하여 분기별로 실행 횟수를 분석을 통해 알아낼 수 있다.
 
+<img src="img/1.png"></img>
+
   ------------------------------------------------------------
 
 ## 복잡도의 종류
@@ -52,29 +54,55 @@ console.log(count);
   - '최선의 경우'
   - '평균적인 경우'
 - 일반적으로 **최악의 경우** 에 대해 알고리즘 복잡도를 정의한다.
-  - ex) Array에서의 Element Inssertion
+  - ex) Array에서의 Element Insertion
+
+<img src="img/2.png"></img>
 
   ------------------------------------------------------------
 
 ## Asymptotic Notations
 
-![함수의 점진적 비교]()
+<img src="img/3.png" height=300></img>
 
 - 점진적(asymptotic) 표기 방법
-- 알고리즘에 입력되는 자료의 개수($ N $)가 충분히 많다고 가정
+- 알고리즘에 입력되는 자료의 개수($ n $)가 충분히 많다고 가정
   - 입력 자료의 개수가 작은 경우, 비교하는 의미가 크게 없기 때문
 - **성능 평가에 공평한 비교** 를 하기 위한 성능 분석 기준으로 사용
   - 동작 시스템, 데이터 크기 등을 배제하고 성능을 비교하기 위해 필요
-- 상수배를 제외하고 $ N $에 대한 함수로 표현 ($ 2 \times N^2 $ &#8594; $ N^2 $)
+- 상한, 하한, 상한과 하한의 교집합으로 정의
 
 ### Big-O Notation
 
-- $ O(N) $,  $ O(N^2) $, $ O(NlogN) $ ...
+- 표기 방법:  $ O(n) $,  $ O(n^2) $, $ O(n\log n) $ ...
+- $ f(n) $ 의 Big-O Notation 정의:
+  - $ O(g(n)) = \{ f(n)~|~0 \le f(n) \le c \cdot g(n) \text{~~for all~}n \ge n_0 >0 \} \text{~~for~~} \exists c > 0. $
+- 예시
+  - $ 3(n+1)^2 \in O(n^2) $
+  - $ n^{1.998} \in O(n^2) $
+  - $ n^2 + n\log n + 3 \in O(n^2) $
+  - $ n^2 \in O(n^2) $
+  - $ n \in O(n^2) $
 
-### Omega  Notation
+### Big-Omega  Notation
 
-- $ \Omega(N) $,  $ \Omega(N^2) $, $ \Omega(NlogN) $ ...
+- $ \Omega(n) $,  $ \Omega(n^2) $, $ \Omega(n\log n) $ ...
+- $ f(n) $ 의 Big-Omega Notation 정의:
+  - $ \Omega(g(n)) = \{ f(n)~|~0 \le c \cdot g(n) \le f(n)   \text{~~for all~}n \ge n_0 >0 \} \text{~~for~~} \exists c > 0. $
+- 예시
+  - $ 3(n+1)^2 \in \Omega(n^2) $
+  - $ n^{2.002} \in \Omega(n^2) $
+  - $ n^2 + NlogN + 3 \in \Omega(n^2) $
+  - $ n^2 \in \Omega(n^2) $
+  - $ n^3 \in \Omega(n^2) $
 
-### Theta Notation
+### Big-Theta Notation
 
-- $ \Theta(N) $,  $ \Theta(N^2) $, $ \Theta(NlogN) $ ...
+- $ \Theta(n) $,  $ \Theta(n^2) $, $ \Theta(n\log n) $ ...
+- $ f(n) $ 의 Big-Theta Notation 정의:
+  - $ \Theta(g(n)) = \{ f(n)~|~0 \le c_1 \cdot g(n) \le f(n) \le c_2 \cdot g(n)   \text{~~for all~}n \ge n_0 >0 \} \text{~~for~~} \exists c_1>0,~\exists c_2 > 0. $
+- 예시
+  - $ 3(n+1)^2 \in \Theta(n^2) $
+  
+  - $ n^2 + n\log n + 3 \in \Theta(n^2) $
+  - $ n^2 \in \Theta(n^2) $
+  - $ n^3 \in \Theta(n^3) $
