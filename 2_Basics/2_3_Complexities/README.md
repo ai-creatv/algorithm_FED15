@@ -73,15 +73,15 @@ console.log(count);
 
 ### Big-O Notation
 
-- 표기 방법:  $ O(n) $,  $ O(n^2) $, $ O(n\log n) $ ...
-- $ f(n) $ 의 Big-O Notation 정의:
-  - $ O(g(n)) = \{ f(n)~|~0 \le f(n) \le c \cdot g(n) \text{~~for all~}n \ge n_0 >0 \} \text{~~for~~} \exists c > 0. $
+- 표기 방법:  ![O(n)](https://render.githubusercontent.com/render/math?math=O(n)),  ![O(n^2)](https://render.githubusercontent.com/render/math?math=O(n%5E2)), ![O(nlogn)](https://render.githubusercontent.com/render/math?math=O(nlogn)) ...
+- ![f(n)](https://render.githubusercontent.com/render/math?math=f(n)) 의 Big-O Notation 정의:
+  - ![O(g(n)) = \{ f(n)|0 \le f(n) \le c \cdot g(n)\space \text{for all}\space \space n \ge n_0 > 0 \}\space \space \text{for} \space \exists c > 0.](https://render.githubusercontent.com/render/math?math=O(g(n))%20%3D%20%5C%7B%20f(n)%7C0%20%5Cle%20f(n)%20%5Cle%20c%20%5Ccdot%20g(n)%5Cspace%20%5Ctext%7Bfor%20all%7D%5Cspace%20%5Cspace%20n%20%5Cge%20n_0%20%3E%200%20%5C%7D%5Cspace%20%5Cspace%20%5Ctext%7Bfor%7D%20%5Cspace%20%5Cexists%20c%20%3E%200.)
 - 예시
-  - $ 3(n+1)^2 \in O(n^2) $
-  - $ n^{1.998} \in O(n^2) $
-  - $ n^2 + n\log n + 3 \in O(n^2) $
-  - $ n^2 \in O(n^2) $
-  - $ n \in O(n^2) $
+  - ![3(n+1)^2 \in O(n^2)](https://render.githubusercontent.com/render/math?math=3(n%2B1)%5E2%20%5Cin%20O(n%5E2))
+  - ![n^{1.998} \in O(n^2)](https://render.githubusercontent.com/render/math?math=n%5E%7B1.998%7D%20%5Cin%20O(n%5E2))
+  - ![n^2 + n\log n + 3 \in O(n^2)](https://render.githubusercontent.com/render/math?math=n%5E2%20%2B%20n%5Clog%20n%20%2B%203%20%5Cin%20O(n%5E2))
+  - ![n^2 \in O(n^2)](https://render.githubusercontent.com/render/math?math=n%5E2%20%5Cin%20O(n%5E2))
+  - ![n \in O(n^2)](https://render.githubusercontent.com/render/math?math=n%20%5Cin%20O(n%5E2))
 
 ### Big-Omega  Notation
 
