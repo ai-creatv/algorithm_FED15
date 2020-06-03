@@ -73,7 +73,12 @@ console.log(count);
 
 ### Big-O Notation
 
-- 표기 방법:  ![O(n)](https://render.githubusercontent.com/render/math?math=O(n)),  ![O(n^2)](https://render.githubusercontent.com/render/math?math=O(n%5E2)), ![O(nlogn)](https://render.githubusercontent.com/render/math?math=O(nlogn)) ...
+<img src="img/4.png" height=300></img>
+
+- 표기 방법
+  - Linear: ![O(n)](https://render.githubusercontent.com/render/math?math=O(n))
+  - Quadratic:  ![O(n^2)](https://render.githubusercontent.com/render/math?math=O(n%5E2))
+  - Logarithmic: ![O(nlogn)](https://render.githubusercontent.com/render/math?math=O(nlogn)) ...
 - ![f(n)](https://render.githubusercontent.com/render/math?math=f(n)) 의 Big-O Notation 정의:
   - ![O(g(n)) = \{ f(n)|0 \le f(n) \le c \cdot g(n)\space \text{for all}\space \space n \ge n_0 > 0 \}\space \space \text{for} \space \exists c > 0.](https://render.githubusercontent.com/render/math?math=O(g(n))%20%3D%20%5C%7B%20f(n)%7C0%20%5Cle%20f(n)%20%5Cle%20c%20%5Ccdot%20g(n)%5Cspace%20%5Ctext%7Bfor%20all%7D%5Cspace%20%5Cspace%20n%20%5Cge%20n_0%20%3E%200%20%5C%7D%5Cspace%20%5Cspace%20%5Ctext%7Bfor%7D%20%5Cspace%20%5Cexists%20c%20%3E%200.)
 - 예시
@@ -84,6 +89,8 @@ console.log(count);
   - ![n \in O(n^2)](https://render.githubusercontent.com/render/math?math=n%20%5Cin%20O(n%5E2))
 
 ### Big-Omega  Notation
+
+<img src="img/5.png" height=300></img>
 
 - ![\Omega(n)](https://render.githubusercontent.com/render/math?math=%5COmega(n)),  ![\Omega(n^2)](https://render.githubusercontent.com/render/math?math=%5COmega(n%5E2)), ![\Omega(n\log n)](https://render.githubusercontent.com/render/math?math=%5COmega(n%5Clog%20n)) ...
 - ![f(n)](https://render.githubusercontent.com/render/math?math=f(n)) 의 Big-Omega Notation 정의:
@@ -97,9 +104,11 @@ console.log(count);
 
 ### Big-Theta Notation
 
+<img src="img/6.png" height=300></img>
+
 - ![\Theta(n)](https://render.githubusercontent.com/render/math?math=%5CTheta(n)),  ![\Theta(n^2)](https://render.githubusercontent.com/render/math?math=%5CTheta(n%5E2)), ![\Theta(n\log n)](https://render.githubusercontent.com/render/math?math=%5CTheta(n%5Clog%20n)) ...
 - ![f(n)](https://render.githubusercontent.com/render/math?math=f(n)) 의 Big-Theta Notation 정의:
-  - ![\Theta(g(n)) = \{ f(n)|0 \le c_1 \cdot g(n) \le f(n) \le c_2 \cdot g(n)\space\space \text{for all}\space n \ge n_0 > 0 \}\space \space \text{for}\space \space \exists c_1 > 0,~\exists c_2 > 0.](https://render.githubusercontent.com/render/math?math=%5CTheta(g(n))%20%3D%20%5C%7B%20f(n)%7C0%20%5Cle%20c_1%20%5Ccdot%20g(n)%20%5Cle%20f(n)%20%5Cle%20c_2%20%5Ccdot%20g(n)%5Cspace%5Cspace%20%5Ctext%7Bfor%20all%7D%5Cspace%20n%20%5Cge%20n_0%20%3E%200%20%5C%7D%5Cspace%20%5Cspace%20%5Ctext%7Bfor%7D%5Cspace%20%5Cspace%20%5Cexists%20c_1%20%3E%200%2C~%5Cexists%20c_2%20%3E%200.)
+  - ![\Theta(g(n)) = \{ f(n)|0 \le c_1 \cdot g(n) \le f(n) \le c_2 \cdot g(n)\space\space \text{for all}\space n \ge n_0 > 0 \}\space \space \text{for}\space \space \exists c_1 > 0,\space\exists c_2 > 0.](https://render.githubusercontent.com/render/math?math=%5CTheta(g(n))%20%3D%20%5C%7B%20f(n)%7C0%20%5Cle%20c_1%20%5Ccdot%20g(n)%20%5Cle%20f(n)%20%5Cle%20c_2%20%5Ccdot%20g(n)%5Cspace%5Cspace%20%5Ctext%7Bfor%20all%7D%5Cspace%20n%20%5Cge%20n_0%20%3E%200%20%5C%7D%5Cspace%20%5Cspace%20%5Ctext%7Bfor%7D%5Cspace%20%5Cspace%20%5Cexists%20c_1%20%3E%200%2C%5Cspace%5Cexists%20c_2%20%3E%200.)
 - 예시
   - ![3(n+1)^2 \in \Theta(n^2)](https://render.githubusercontent.com/render/math?math=3(n%2B1)%5E2%20%5Cin%20%5CTheta(n%5E2))
   - ![n^2 + n\log n + 3 \in \Theta(n^2)](https://render.githubusercontent.com/render/math?math=n%5E2%20%2B%20n%5Clog%20n%20%2B%203%20%5Cin%20%5CTheta(n%5E2))

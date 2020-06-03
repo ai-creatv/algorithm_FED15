@@ -6,6 +6,8 @@
 - JavaScript로 프로그래밍할 때, 좋은 습관/나쁜 습관들을 알아본다.
 - JavaScript Reference를 활용하는 방법을 이해한다.
 
+  -------------------------------
+
 ## JavaScript 주요 문법 Review
 
 ### Variables
@@ -188,9 +190,12 @@
   function Person(name, age) {
       this.name = name;
       this.age = age;
+      this.speak = function () {
+        console.log('My name is ' + this.name);
+      }
   }
   var person = new Person('Jane', 22);
-  console.log(person);
+  person.speak();
   ```
 
 - Classes (ES6)
@@ -201,9 +206,12 @@
           this.name = name;
           this.age = age;
       }
+      this.speak = function() {
+        console.log('My name is ' + this.name);
+      }
   }
   const person = new Person('Jane', 22);
-  console.log(person);
+  person.speak();
   ```
 
 - Subclasses (ES6)
@@ -270,6 +278,8 @@
   console.log(`I have ${a} ${s}.`);  // ES6
   ```
 
+  -------------------------------
+
 ## 좋은 습관/나쁜 습관
 
 - var, let, const
@@ -284,6 +294,8 @@
   - 일반적으로 == 대신 ===를 쓰는 것이 좋다.
   - 엄밀하게 동작하는 ===를 사용하는 것이 미검출 오류가 발생할 확률을 줄여준다.
   - 반드시 ==를 써야 할 경우가 있다면, 주석으로 이유를 적어두자.
+
+  -------------------------------
 
 ## JavaScript References
 
