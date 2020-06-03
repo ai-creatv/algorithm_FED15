@@ -67,10 +67,9 @@ console.log(count);
 
 <img src="img/4.png" height=300></img>
 
-- 표기 방법
-  - Linear: ![O(n)](https://render.githubusercontent.com/render/math?math=O(n))
-  - Quadratic:  ![O(n^2)](https://render.githubusercontent.com/render/math?math=O(n%5E2))
-  - Logarithmic: ![O(nlogn)](https://render.githubusercontent.com/render/math?math=O(nlogn)) ...
+- 복잡도 순위
+  - ![O(1) < O(logn) < O(n) < O(nlogn) < O(n^2) < O(2^n) < O(n!)](https://render.githubusercontent.com/render/math?math=O(1)%20%3C%20O(logn)%20%3C%20O(n)%20%3C%20O(nlogn)%20%3C%20O(n%5E2)%20%3C%20O(2%5En)%20%3C%20O(n!))
+    - 상수, 로그, 선형, 선형로그, 다항식(제곱), 지수, 팩토리얼
 - ![f(n)](https://render.githubusercontent.com/render/math?math=f(n)) 의 Big-O Notation 정의:
   - ![O(g(n)) = \{ f(n)|0 \le f(n) \le c \cdot g(n)\space \text{for all}\space \space n \ge n_0 > 0 \}\space \space \text{for} \space \exists c > 0.](https://render.githubusercontent.com/render/math?math=O(g(n))%20%3D%20%5C%7B%20f(n)%7C0%20%5Cle%20f(n)%20%5Cle%20c%20%5Ccdot%20g(n)%5Cspace%20%5Ctext%7Bfor%20all%7D%5Cspace%20%5Cspace%20n%20%5Cge%20n_0%20%3E%200%20%5C%7D%5Cspace%20%5Cspace%20%5Ctext%7Bfor%7D%20%5Cspace%20%5Cexists%20c%20%3E%200.)
 - 예시
@@ -84,25 +83,25 @@ console.log(count);
 
 <img src="img/5.png" height=300></img>
 
-- ![\Omega(n)](https://render.githubusercontent.com/render/math?math=%5COmega(n)),  ![\Omega(n^2)](https://render.githubusercontent.com/render/math?math=%5COmega(n%5E2)), ![\Omega(n\log n)](https://render.githubusercontent.com/render/math?math=%5COmega(n%5Clog%20n)) ...
+- ![\text{Ω}(n)](https://render.githubusercontent.com/render/math?math=%5Ctext{Ω}(n)),  ![\text{Ω}(n^2)](https://render.githubusercontent.com/render/math?math=%5Ctext{Ω}(n%5E2)), ![\text{Ω}(n\log n)](https://render.githubusercontent.com/render/math?math=%5Ctext{Ω}(n%5Clog%20n)) ...
 - ![f(n)](https://render.githubusercontent.com/render/math?math=f(n)) 의 Big-Omega Notation 정의:
-  - ![\Omega(g(n)) = \{ f(n)|0 \le c \cdot g(n) \le f(n) \space \space  \text{for all} \space n \ge n_0 > 0 \}\space \space \text{for} \space \space \exists c > 0.](https://render.githubusercontent.com/render/math?math=%5COmega(g(n))%20%3D%20%5C%7B%20f(n)%7C0%20%5Cle%20c%20%5Ccdot%20g(n)%20%5Cle%20f(n)%20%5Cspace%20%5Cspace%20%20%5Ctext%7Bfor%20all%7D%20%5Cspace%20n%20%5Cge%20n_0%20%3E%200%20%5C%7D%5Cspace%20%5Cspace%20%5Ctext%7Bfor%7D%20%5Cspace%20%5Cspace%20%5Cexists%20c%20%3E%200.)
+  - ![\text{Ω}(g(n)) = \{ f(n)|0 \le c \cdot g(n) \le f(n) \space \space  \text{for all} \space n \ge n_0 > 0 \}\space \space \text{for} \space \space \exists c > 0.](https://render.githubusercontent.com/render/math?math=%5Ctext{Ω}(g(n))%20%3D%20%5C%7B%20f(n)%7C0%20%5Cle%20c%20%5Ccdot%20g(n)%20%5Cle%20f(n)%20%5Cspace%20%5Cspace%20%20%5Ctext%7Bfor%20all%7D%20%5Cspace%20n%20%5Cge%20n_0%20%3E%200%20%5C%7D%5Cspace%20%5Cspace%20%5Ctext%7Bfor%7D%20%5Cspace%20%5Cspace%20%5Cexists%20c%20%3E%200.)
 - 예시
-  - ![3(n+1)^2 \in \Omega(n^2)](https://render.githubusercontent.com/render/math?math=3(n%2B1)%5E2%20%5Cin%20%5COmega(n%5E2))
-  - ![n^{2.002} \in \Omega(n^2)](https://render.githubusercontent.com/render/math?math=n%5E%7B2.002%7D%20%5Cin%20%5COmega(n%5E2))
-  - ![n^2 + NlogN + 3 \in \Omega(n^2)](https://render.githubusercontent.com/render/math?math=n%5E2%20%2B%20NlogN%20%2B%203%20%5Cin%20%5COmega(n%5E2))
-  - ![n^2 \in \Omega(n^2)](https://render.githubusercontent.com/render/math?math=n%5E2%20%5Cin%20%5COmega(n%5E2))
-  - ![n^3 \in \Omega(n^2)](https://render.githubusercontent.com/render/math?math=n%5E3%20%5Cin%20%5COmega(n%5E2))
+  - ![3(n+1)^2 \in \text{Ω}(n^2)](https://render.githubusercontent.com/render/math?math=3(n%2B1)%5E2%20%5Cin%20%5Ctext{Ω}(n%5E2))
+  - ![n^{2.002} \in \text{Ω}(n^2)](https://render.githubusercontent.com/render/math?math=n%5E%7B2.002%7D%20%5Cin%20%5Ctext{Ω}(n%5E2))
+  - ![n^2 + NlogN + 3 \in \text{Ω}(n^2)](https://render.githubusercontent.com/render/math?math=n%5E2%20%2B%20NlogN%20%2B%203%20%5Cin%20%5Ctext{Ω}(n%5E2))
+  - ![n^2 \in \text{Ω}(n^2)](https://render.githubusercontent.com/render/math?math=n%5E2%20%5Cin%20%5Ctext{Ω}(n%5E2))
+  - ![n^3 \in \text{Ω}(n^2)](https://render.githubusercontent.com/render/math?math=n%5E3%20%5Cin%20%5Ctext{Ω}(n%5E2))
 
 ### Big-Theta Notation
 
 <img src="img/6.png" height=300></img>
 
-- ![\Theta(n)](https://render.githubusercontent.com/render/math?math=%5CTheta(n)),  ![\Theta(n^2)](https://render.githubusercontent.com/render/math?math=%5CTheta(n%5E2)), ![\Theta(n\log n)](https://render.githubusercontent.com/render/math?math=%5CTheta(n%5Clog%20n)) ...
+- ![\text{Θ}(n)](https://render.githubusercontent.com/render/math?math=%5Ctext{Θ}(n)),  ![\text{Θ}(n^2)](https://render.githubusercontent.com/render/math?math=%5Ctext{Θ}(n%5E2)), ![\text{Θ}(n\log n)](https://render.githubusercontent.com/render/math?math=%5Ctext{Θ}(n%5Clog%20n)) ...
 - ![f(n)](https://render.githubusercontent.com/render/math?math=f(n)) 의 Big-Theta Notation 정의:
-  - ![\Theta(g(n)) = \{ f(n)|0 \le c_1 \cdot g(n) \le f(n) \le c_2 \cdot g(n)\space\space \text{for all}\space n \ge n_0 > 0 \}\space \space \text{for}\space \space \exists c_1 > 0,\space\exists c_2 > 0.](https://render.githubusercontent.com/render/math?math=%5CTheta(g(n))%20%3D%20%5C%7B%20f(n)%7C0%20%5Cle%20c_1%20%5Ccdot%20g(n)%20%5Cle%20f(n)%20%5Cle%20c_2%20%5Ccdot%20g(n)%5Cspace%5Cspace%20%5Ctext%7Bfor%20all%7D%5Cspace%20n%20%5Cge%20n_0%20%3E%200%20%5C%7D%5Cspace%20%5Cspace%20%5Ctext%7Bfor%7D%5Cspace%20%5Cspace%20%5Cexists%20c_1%20%3E%200%2C%5Cspace%5Cexists%20c_2%20%3E%200.)
+  - ![\text{Θ}(g(n)) = \{ f(n)|0 \le c_1 \cdot g(n) \le f(n) \le c_2 \cdot g(n)\space\space \text{for all}\space n \ge n_0 > 0 \}\space \space \text{for}\space \space \exists c_1 > 0,\space\exists c_2 > 0.](https://render.githubusercontent.com/render/math?math=%5Ctext{Θ}(g(n))%20%3D%20%5C%7B%20f(n)%7C0%20%5Cle%20c_1%20%5Ccdot%20g(n)%20%5Cle%20f(n)%20%5Cle%20c_2%20%5Ccdot%20g(n)%5Cspace%5Cspace%20%5Ctext%7Bfor%20all%7D%5Cspace%20n%20%5Cge%20n_0%20%3E%200%20%5C%7D%5Cspace%20%5Cspace%20%5Ctext%7Bfor%7D%5Cspace%20%5Cspace%20%5Cexists%20c_1%20%3E%200%2C%5Cspace%5Cexists%20c_2%20%3E%200.)
 - 예시
-  - ![3(n+1)^2 \in \Theta(n^2)](https://render.githubusercontent.com/render/math?math=3(n%2B1)%5E2%20%5Cin%20%5CTheta(n%5E2))
-  - ![n^2 + n\log n + 3 \in \Theta(n^2)](https://render.githubusercontent.com/render/math?math=n%5E2%20%2B%20n%5Clog%20n%20%2B%203%20%5Cin%20%5CTheta(n%5E2))
-  - ![n^2 \in \Theta(n^2)](https://render.githubusercontent.com/render/math?math=n%5E2%20%5Cin%20%5CTheta(n%5E2))
-  - ![n^3 \in \Theta(n^3)](https://render.githubusercontent.com/render/math?math=n%5E3%20%5Cin%20%5CTheta(n%5E3))
+  - ![3(n+1)^2 \in \text{Θ}(n^2)](https://render.githubusercontent.com/render/math?math=3(n%2B1)%5E2%20%5Cin%20%5Ctext{Θ}(n%5E2))
+  - ![n^2 + n\log n + 3 \in \text{Θ}(n^2)](https://render.githubusercontent.com/render/math?math=n%5E2%20%2B%20n%5Clog%20n%20%2B%203%20%5Cin%20%5Ctext{Θ}(n%5E2))
+  - ![n^2 \in \text{Θ}(n^2)](https://render.githubusercontent.com/render/math?math=n%5E2%20%5Cin%20%5Ctext{Θ}(n%5E2))
+  - ![n^3 \in \text{Θ}(n^3)](https://render.githubusercontent.com/render/math?math=n%5E3%20%5Cin%20%5Ctext{Θ}(n%5E3))
