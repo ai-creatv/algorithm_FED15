@@ -25,8 +25,8 @@
   const b = 2;
   a = 3;
   // b = 3;  // Error
-  console.log(a);
-  console.log(b);
+  console.log(a);  // 3
+  console.log(b);  // 2
   ```
 
 - Variable scopes
@@ -76,9 +76,11 @@
 
   ```javascript
   const array = [1, 2, 3];
-  for(let i of array) {
-      console.log(array[i]);
+  for(let el of array) {
+      console.log(el);
   }
+  console.log()
+
   for(let [index, val] of array.entries()) {
       console.log('array[' + index + ']:' + val);
   }
@@ -100,9 +102,14 @@
   let i = 0;
   while (i < array.length) {
       console.log(i);
+      i++;
   }
+  console.log()
+
+  i = 0;
   do {
       console.log(i);
+      i++;
   } while (i < array.length)
   ```
 
@@ -113,16 +120,18 @@
   ```javascript
   const array = [1, 2, 3, 4];
   for(let val of array) {
-      console.log(val);
       if(val == 2) {
           break;
       }
-  }
-  for(let val of array) {
       console.log(val);
+  }
+  console.log()
+
+  for(let val of array) {
       if(val == 2) {
           continue;
       }
+      console.log(val);
   }
   ```
 
@@ -132,20 +141,22 @@
   const array = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]];
   for(let subArray of array) {
       for(let val of subArray) {
-          console.log(val);
           if(val == 6) {
               break;
           }
+          console.log(val);
       }
   }
+  console.log()
+
   loop1:
   for(let subArray of array) {
       loop2:
       for(let val of subArray) {
-          console.log(val);
           if(val == 6) {
               break loop1;
           }
+          console.log(val);
       }
   }
   ```
@@ -189,7 +200,7 @@
       this.name = name;
       this.age = age;
       this.speak = function () {
-        console.log('My name is ' + this.name);
+          console.log('My name is ' + this.name);
       }
   }
   var person = new Person('Jane', 22);
@@ -204,8 +215,8 @@
           this.name = name;
           this.age = age;
       }
-      this.speak = function() {
-        console.log('My name is ' + this.name);
+      speak = function() {
+          console.log('My name is ' + this.name);
       }
   }
   const person = new Person('Jane', 22);
@@ -220,15 +231,21 @@
           this.name = name;
           this.age = age;
       }
+      speak = function() {
+          console.log('My name is ' + this.name);
+      }
   }
   class Student extends Person {
       constructor (name, age, major) {
           super(name, age);
           this.major = major;
       }
+      speak = function() {
+          console.log('My name is ' + this.name + ' and my major is ' + this.major);
+      }
   }
-  const student = new Studnet('Jane', 22, 'English');
-  console.log(student);
+  const student = new Student('Jane', 22, 'English');
+  student.speak();
   ```
 
 ### Others
@@ -257,7 +274,7 @@
 
   ```javascript
   function funcWithTwoLenArray() {
-      return [a, b]
+      return [1, 2]
   }
   const array = funcWithTwoLenArray();
   const [a, b] = array;
