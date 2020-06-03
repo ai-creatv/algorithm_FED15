@@ -85,24 +85,23 @@ console.log(count);
 
 ### Big-Omega  Notation
 
-- $ \Omega(n) $,  $ \Omega(n^2) $, $ \Omega(n\log n) $ ...
-- $ f(n) $ 의 Big-Omega Notation 정의:
-  - $ \Omega(g(n)) = \{ f(n)~|~0 \le c \cdot g(n) \le f(n)   \text{~~for all~}n \ge n_0 >0 \} \text{~~for~~} \exists c > 0. $
+- ![\Omega(n)](https://render.githubusercontent.com/render/math?math=%5COmega(n)),  ![\Omega(n^2)](https://render.githubusercontent.com/render/math?math=%5COmega(n%5E2)), ![\Omega(n\log n)](https://render.githubusercontent.com/render/math?math=%5COmega(n%5Clog%20n)) ...
+- ![f(n)](https://render.githubusercontent.com/render/math?math=f(n)) 의 Big-Omega Notation 정의:
+  - ![\Omega(g(n)) = \{ f(n)|0 \le c \cdot g(n) \le f(n) \space \space  \text{for all} \space n \ge n_0 > 0 \}\space \space \text{for} \space \space \exists c > 0.](https://render.githubusercontent.com/render/math?math=%5COmega(g(n))%20%3D%20%5C%7B%20f(n)%7C0%20%5Cle%20c%20%5Ccdot%20g(n)%20%5Cle%20f(n)%20%5Cspace%20%5Cspace%20%20%5Ctext%7Bfor%20all%7D%20%5Cspace%20n%20%5Cge%20n_0%20%3E%200%20%5C%7D%5Cspace%20%5Cspace%20%5Ctext%7Bfor%7D%20%5Cspace%20%5Cspace%20%5Cexists%20c%20%3E%200.)
 - 예시
-  - $ 3(n+1)^2 \in \Omega(n^2) $
-  - $ n^{2.002} \in \Omega(n^2) $
-  - $ n^2 + NlogN + 3 \in \Omega(n^2) $
-  - $ n^2 \in \Omega(n^2) $
-  - $ n^3 \in \Omega(n^2) $
+  - ![3(n+1)^2 \in \Omega(n^2)](https://render.githubusercontent.com/render/math?math=3(n%2B1)%5E2%20%5Cin%20%5COmega(n%5E2))
+  - ![n^{2.002} \in \Omega(n^2)](https://render.githubusercontent.com/render/math?math=n%5E%7B2.002%7D%20%5Cin%20%5COmega(n%5E2))
+  - ![n^2 + NlogN + 3 \in \Omega(n^2)](https://render.githubusercontent.com/render/math?math=n%5E2%20%2B%20NlogN%20%2B%203%20%5Cin%20%5COmega(n%5E2))
+  - ![n^2 \in \Omega(n^2)](https://render.githubusercontent.com/render/math?math=n%5E2%20%5Cin%20%5COmega(n%5E2))
+  - ![n^3 \in \Omega(n^2)](https://render.githubusercontent.com/render/math?math=n%5E3%20%5Cin%20%5COmega(n%5E2))
 
 ### Big-Theta Notation
 
-- $ \Theta(n) $,  $ \Theta(n^2) $, $ \Theta(n\log n) $ ...
-- $ f(n) $ 의 Big-Theta Notation 정의:
-  - $ \Theta(g(n)) = \{ f(n)~|~0 \le c_1 \cdot g(n) \le f(n) \le c_2 \cdot g(n)   \text{~~for all~}n \ge n_0 >0 \} \text{~~for~~} \exists c_1>0,~\exists c_2 > 0. $
+- ![\Theta(n)](https://render.githubusercontent.com/render/math?math=%5CTheta(n)),  ![\Theta(n^2)](https://render.githubusercontent.com/render/math?math=%5CTheta(n%5E2)), ![\Theta(n\log n)](https://render.githubusercontent.com/render/math?math=%5CTheta(n%5Clog%20n)) ...
+- ![f(n)](https://render.githubusercontent.com/render/math?math=f(n)) 의 Big-Theta Notation 정의:
+  - ![\Theta(g(n)) = \{ f(n)|0 \le c_1 \cdot g(n) \le f(n) \le c_2 \cdot g(n)\space\space \text{for all}\space n \ge n_0 > 0 \}\space \space \text{for}\space \space \exists c_1 > 0,~\exists c_2 > 0.](https://render.githubusercontent.com/render/math?math=%5CTheta(g(n))%20%3D%20%5C%7B%20f(n)%7C0%20%5Cle%20c_1%20%5Ccdot%20g(n)%20%5Cle%20f(n)%20%5Cle%20c_2%20%5Ccdot%20g(n)%5Cspace%5Cspace%20%5Ctext%7Bfor%20all%7D%5Cspace%20n%20%5Cge%20n_0%20%3E%200%20%5C%7D%5Cspace%20%5Cspace%20%5Ctext%7Bfor%7D%5Cspace%20%5Cspace%20%5Cexists%20c_1%20%3E%200%2C~%5Cexists%20c_2%20%3E%200.)
 - 예시
-  - $ 3(n+1)^2 \in \Theta(n^2) $
-  
-  - $ n^2 + n\log n + 3 \in \Theta(n^2) $
-  - $ n^2 \in \Theta(n^2) $
-  - $ n^3 \in \Theta(n^3) $
+  - ![3(n+1)^2 \in \Theta(n^2)](https://render.githubusercontent.com/render/math?math=3(n%2B1)%5E2%20%5Cin%20%5CTheta(n%5E2))
+  - ![n^2 + n\log n + 3 \in \Theta(n^2)](https://render.githubusercontent.com/render/math?math=n%5E2%20%2B%20n%5Clog%20n%20%2B%203%20%5Cin%20%5CTheta(n%5E2))
+  - ![n^2 \in \Theta(n^2)](https://render.githubusercontent.com/render/math?math=n%5E2%20%5Cin%20%5CTheta(n%5E2))
+  - ![n^3 \in \Theta(n^3)](https://render.githubusercontent.com/render/math?math=n%5E3%20%5Cin%20%5CTheta(n%5E3))
