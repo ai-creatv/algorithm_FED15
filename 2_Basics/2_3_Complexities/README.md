@@ -57,7 +57,7 @@ console.log(count);
 <img src="img/3.png" height=300></img>
 
 - 점진적(asymptotic) 표기 방법
-- 알고리즘에 입력되는 자료의 개수($ n $)가 충분히 많다고 가정
+- 알고리즘에 입력되는 자료의 개수(![n](https://render.githubusercontent.com/render/math?math=n))가 충분히 많다고 가정
   - 입력 자료의 개수가 작은 경우, 비교하는 의미가 크게 없기 때문
 - **성능 평가에 공평한 비교** 를 하기 위한 성능 분석 기준으로 사용
   - 동작 시스템, 데이터 크기 등을 배제하고 성능을 비교하기 위해 필요
