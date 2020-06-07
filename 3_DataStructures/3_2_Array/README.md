@@ -1,4 +1,4 @@
-# 배열(Arrays)
+# 배열 (Arrays)
 
 ## 배열이란
 
@@ -35,6 +35,7 @@
 
 - JavaScript의 Array는 배열 자료구조와는 다르며, 고수준의 기능을 포함한다.
 - JavaScript에서 배열과 유사한 자료구조는 형식화 배열(Typed Array)이다.
+  - `Int8Array`, `Uint8Array`, `Uint8ClampledArray`, `Int16Array`, `Uint16Array`, `Int32Array`, `Uint32Array`, `Float32Array`, `Float64Array`
   - 형식화 배열은 특정 형식의 Element만을 허용한다.
   - 형식화 배열은 자료가 메모리에 연속적으로 배치되는 것을 보장한다.
   - C언어 수준의 최적화를 보장한다.

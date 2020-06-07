@@ -1,41 +1,79 @@
-# 배열(Arrays)
+# 리스트 (Lists)
 
-## 배열이란
+## 리스트란
 
-- 다루는 자료의 수가 많아질 때, 이를 다루기 위해 사용하는 **자료 구조**
-- 하나의 변수에 여러 자료를 저장할 수 있으며, 반복문을 이용해 효율적으로 처리 가능
-- 배열에서 인덱스는 유일무이한 식별자(Identifier)로 사용된다.
+- 순차적인 데이터(Sequential Data)를 다루기 위한 **추상 자료형**
+- 리스트에는 동일한 값이 여럿 존재할 수 있으며, 이는 서로 다른 항목으로 구분된다.
 
-## 배열의 특징
+## 리스트의 연산자 (Operators)
 
-- 크기(Element의 개수)가 정해져 있다.
-- 자료 구조에 기능(메소드)이 포함되어 있지 않다.
-- 자료가 메모리상에 빈틈 없이 연속적으로 위치해 있다.
-- 인덱스를 활용하여 자료에 빠르게 접근할 수 있다.
+![리스트의 연산자](img/1.png)
 
-## 배열의 단점
+1. 비어있는 리스트를 생성하는 생성자
+1. 리스트가 비어있는지 확인하는 연산자
+1. 리스트의 앞에 개체를 삽입(prepending)하는 연산자
+1. 리스트의 뒤에 개체를 삽입(appending)하는 연산자
+1. 리스트의 첫 머리(head)를 결정하는 연산자
+1. 주어진 인덱스에 해당하는 요소에 접근하는 연산자
+1. 주어진 인덱스에 새로운 요소를 삽입하는 연산자
+1. 주어진 인덱스에 해당하는 요소를 제거하는 연산자
 
-- 배열의 길이는 생성 시 정해져, 변경할 수 없다.
-  - 가변 길이 배열은 배열의 크기를 변경할 때 마다 새 배열을 만든다.
-- Element를 제거할 경우, 배열에 빈 틈이 생긴다.
-  - 기존 Element의 인덱스를 유지하기 위해 빈 틈을 유지한다.
+## 리스트의 구현
 
-## 배열의 활용
+- Array List
+![Array List](img/2.png)
+  - 배열을 기반으로 만들어진 리스트
+  - 가변 길이를 가지는 배열을 이용하여 리스트 구현
+  - Array List에서 각 연산의 복잡도
+    - `isEmpty()`: O(1)
+    - `prepend()`: O(n)
+    - `append()`: O(n) (조건부 O(1))
+    - `setHead(index)`: O(1)
+    - `getItem(index)`: O(1)
+    - `insert(item)`: O(n)
+    - `remove(index)`: O(n)
+- 연결 리스트 (Linked List)
+![Linked List](img/3.png)
+  - 단방향(Singly Linked List) 또는 양방향(Doubly Linked List)
+  - 각 요소는 값(Value)과 다음 요소를 *가르키는* 연결(Link)로 구성
+  - 연결 리스트에서 각 연산의 복잡도
+    - `isEmpty()`: O(n)
+    - `prepend()`: O(1)
+    - `append()`: O(n)
+    - `setHead(index)`: O(n)
+    - `getItem(index)`: O(n)
+    - `insert(item)`: O(1)
+    - `remove(index)`: O(1)
 
-- 배열의 생성
-![배열의 생성](img/1.png)
-- 자료의 삽입
-![자료의 삽입](img/2.png)
-- 자료의 삭제
-![자료의 삭제](img/3.png)
-- 자료의 색인
-![자료의 색인](img/4.png)
+## JavaScript와 리스트
 
-## JavaScript와 배열
+- JavaScript의 Array는 추상 자료형인 리스트를 구현한 **자료 구조**이다.
+- Array에 구현된 리스트의 기능 (*`italic`*: trivial하게 구현 가능)
+  - 비어있는 리스트를 생성하는 생성자 (`constructor`)
+  - 리스트가 비어있는지 확인하는 연산자 (*`array.length`*)
+  - 리스트의 앞에 개체를 삽입(prepending)하는 연산자 (`array.unshift`)
+  - 리스트의 뒤에 개체를 삽입(appending)하는 연산자 (`array.push`)
+  - 리스트의 첫 머리(head)를 결정하는 연산자 (*`array.slice`*; ~~O(1)~~ O(n))
+  - 주어진 인덱스에 해당하는 요소에 접근하는 연산자 (`array[index]`)
+  - 주어진 인덱스에 새로운 요소를 삽입하는 연산자 (*`array.slice` + `array.join`*)
+  - 주어진 인덱스에 해당하는 요소를 제거하는 연산자 (*`array.splice`*)
 
-- JavaScript의 Array는 배열 자료구조와는 다르며, 고수준의 기능을 포함한다.
-- JavaScript에서 배열과 유사한 자료구조는 형식화 배열(Typed Array)이다.
-  - Int8Array, Uint8Array, Uint8ClampledArray, Int16Array, Uint16Array, Int32Array, Uint32Array, Float32Array, Float64Array
-  - 형식화 배열은 특정 형식의 Element만을 허용한다.
-  - 형식화 배열은 자료가 메모리에 연속적으로 배치되는 것을 보장한다.
-  - C언어 수준의 최적화를 보장한다.
+## [실습] Array List 직접 구현하기
+
+- JavaScript의 TypedArray를 이용해 Array List 직접 구현하기
+- 구현 조건
+  - `class`와 `Int32Array`를 이용하여 Array List를 구현한다.
+  - `Int32Array`의 용량(capacity)은 고정되어 있다고 가정한다.
+    - 배열의 크기가 부족할 때 마다 2배 길이의 `Int32Array`를 새로 생성한다.
+  - 다음과 같은 리스트 ADT의 연산자를 구현해야 한다.
+    1. 비어있는 리스트를 생성하는 생성자
+    1. 리스트가 비어있는지 확인하는 연산자
+    1. 리스트의 앞에 개체를 삽입(prepending)하는 연산자
+    1. 리스트의 뒤에 개체를 삽입(appending)하는 연산자
+    1. 리스트의 첫 머리(head)를 결정하는 연산자
+    1. 주어진 인덱스에 해당하는 요소에 접근하는 연산자
+    1. 주어진 인덱스에 새로운 요소를 삽입하는 연산자
+    1. 주어진 인덱스에 해당하는 요소를 제거하는 연산자
+- 참조 코드
+  - [기반 소스 코드](src/before.js)
+  - [솔루션 코드](src/after.js)
