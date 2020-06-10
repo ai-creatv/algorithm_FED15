@@ -8,16 +8,21 @@
 
 ## 리스트의 연산자
 
-![리스트의 연산자](img/1.png)
-
 1. 비어있는 리스트를 생성하는 생성자
+![constructor](img/1.png)
 1. 리스트가 비어있는지 확인하는 연산자
 1. 리스트의 앞에 개체를 삽입(prepending)하는 연산자
+![prepend](img/2.png)
 1. 리스트의 뒤에 개체를 삽입(appending)하는 연산자
+![append](img/3.png)
 1. 리스트의 첫 머리(head)를 결정하는 연산자
+![setHead](img/4.png)
 1. 주어진 인덱스에 해당하는 요소에 접근하는 연산자
+![access](img/5.png)
 1. 주어진 인덱스에 새로운 요소를 삽입하는 연산자
+![insert](img/6.png)
 1. 주어진 인덱스에 해당하는 요소를 제거하는 연산자
+![remove](img/7.png)
 
 ## 연결 리스트의 구현
 
@@ -32,13 +37,13 @@
     - `remove(index)`: O(1)
 
 - 단방향 연결 리스트 (Singly Linked List)
-![Singly Linked List](img/2.png)
+![Singly Linked List](img/8.png)
   - Head Node(첫 Element)를 시작으로 단방향으로 연결된 연결 리스트
     - 각 `Node`는 `value`와 `next` property를 지닌다.
   - 일자로 연결된 가장 간단한 형태의 연결 리스트이다.
 
 - 양방향 연결 리스트 (Doubly Linked List)
-![Doubly Linked List](img/3.png)
+![Doubly Linked List](img/9.png)
   - 단방향 연결 리스트에 `prev`를 포함시켜 양방향으로 연결된 연결 리스트
   - 이전 Node로 돌아갈 수 있어, 더 유연한 장점이 있다.
 

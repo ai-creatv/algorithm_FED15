@@ -7,21 +7,26 @@
 
 ## 리스트의 연산자 (Operators)
 
-![리스트의 연산자](img/1.png)
-
 1. 비어있는 리스트를 생성하는 생성자
+![constructor](img/1.png)
 1. 리스트가 비어있는지 확인하는 연산자
 1. 리스트의 앞에 개체를 삽입(prepending)하는 연산자
+![prepend](img/2.png)
 1. 리스트의 뒤에 개체를 삽입(appending)하는 연산자
+![append](img/3.png)
 1. 리스트의 첫 머리(head)를 결정하는 연산자
+![setHead](img/4.png)
 1. 주어진 인덱스에 해당하는 요소에 접근하는 연산자
+![access](img/5.png)
 1. 주어진 인덱스에 새로운 요소를 삽입하는 연산자
+![insert](img/6.png)
 1. 주어진 인덱스에 해당하는 요소를 제거하는 연산자
+![remove](img/7.png)
 
 ## 리스트의 구현
 
 - Array List
-![Array List](img/2.png)
+![Array List](img/8.png)
   - 배열을 기반으로 만들어진 리스트
   - 가변 길이를 가지는 배열을 이용하여 리스트 구현
   - Array List에서 각 연산의 복잡도
@@ -33,7 +38,7 @@
     - `insert(item)`: O(n)
     - `remove(index)`: O(n)
 - 연결 리스트 (Linked List)
-![Linked List](img/3.png)
+![Linked List](img/9.png)
   - 단방향(Singly Linked List) 또는 양방향(Doubly Linked List)
   - 각 요소는 값(Value)과 다음 요소를 *가르키는* 연결(Link)로 구성
   - 연결 리스트에서 각 연산의 복잡도
