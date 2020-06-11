@@ -4,16 +4,33 @@
 
 ### Doubly Linked List 구현
 
-- [JavaScript 레퍼런스](https://devdocs.programmers.co.kr/javascript/)를 참조하여 문제 해결
-- [알고리즘 테스트용 소스](http://github.com/ai-creatv/algorithm/tree/master/2_Basics/2_2_AlgorithmTest/src/function/main.js)를 활용하여 알고리즘 테스트
+- [Reference 페이지](https://github.com/ai-creatv/algorithm/tree/master/3_DataStructures/3_4_LinkedLists)
+- [Source Code](https://github.com/ai-creatv/algorithm/blob/master/3_DataStructures/3_4_LinkedLists/src/DLL/after.js)를 기반으로 코드 작성
+- 구현한 자료구조를 테스트하는 코드도 직접 작성하여 테스트 수행
+
+### Circular Queue 구현
+
+- [Reference 페이지](https://github.com/ai-creatv/algorithm/tree/master/3_DataStructures/3_6_Queues)
+- [Source Code](https://github.com/ai-creatv/algorithm/blob/master/3_DataStructures/3_6_Queues/src/circularQ/after.js)를 기반으로 코드 작성
+- 구현한 자료구조를 테스트하는 코드도 직접 작성하여 테스트 수행
+
+### Linked Queue 구현
+
+- Singly Linked List 또는 Doubly Linked List를 이용하여 구현
+- [Reference 페이지](https://github.com/ai-creatv/algorithm/tree/master/3_DataStructures/3_6_Queues)
+- [Source Code](https://github.com/ai-creatv/algorithm/blob/master/3_DataStructures/3_6_Queues/src/linkedQ/after.js)를 기반으로 코드 작성
+- 구현한 자료구조를 테스트하는 코드도 직접 작성하여 테스트 수행
 
 ## 제출 사항
 
-- **Skill Check 레벨1 획득 스크린샷**
-- **알고리즘 테스트 과정에 작성한 소스코드**
-  - **main.js 및 테스트 입력 txt 파일들**
+- **각 자료구조의 구현된 소스 코드**
+  - **각 자료 구조의 `after.js` 파일**
 
 ## 제출 기한 및 방법
 
-- <ai@creatv.kr>으로 하나의 파일로 압축하여 제출
-- **6월 7일(일) 자정**까지 제출
+- **GitHub을 통해 제출**
+  1. 강의 Github Repository를 Fork <https://github.com/ai-creatv/algorithm>
+  ![Fork](img/1.png)
+  1. Fork하여 생성된 본인의 Repository에 구현 완료된 소스 코드를 Push하여 제출
+- Push 완료 후, <ai@creatv.kr>으로 Fork한 본인의 Repository의 주소를 제출
+- **6월 14일(일) 자정**까지 제출
