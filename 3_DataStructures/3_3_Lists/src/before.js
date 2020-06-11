@@ -32,5 +32,9 @@ class ArrayList {
     remove(index) {
 
     }
+
+    print() {
+        
+    }
 }
 

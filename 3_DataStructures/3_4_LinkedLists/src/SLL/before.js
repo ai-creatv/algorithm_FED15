@@ -37,5 +37,8 @@ class SinglyLinkedList {
     remove(index) {
 
     }
-}
 
+    print() {
+
+    }
+}
