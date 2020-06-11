@@ -48,7 +48,7 @@ console.log(count);
   - '최선의 경우'
   - '평균적인 경우'
 - 일반적으로 **최악의 경우** 에 대해 알고리즘 복잡도를 정의한다.
-  - ex) Array에서의 Element Insertion
+  - ex) List에서의 Element Insertion
 
 <img src="img/2.png"></img>
 
