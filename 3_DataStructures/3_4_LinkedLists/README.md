@@ -32,26 +32,26 @@
     - `prepend()`: O(1)
     - `append()`: O(n)
     - `setHead(index)`: O(n)
-    - `getItem(index)`: O(n)
-    - `insert(item)`: O(1)
-    - `remove(index)`: O(1)
+    - `access(index)`: O(n)
+    - `insert(item, index)`: O(1) (w/o access)
+    - `remove(index)`: O(1) (w/o access)
 
-- 단방향 연결 리스트 (Singly Linked List)
+- **단방향 연결 리스트 (Singly Linked List)**
 ![Singly Linked List](img/8.png)
   - Head Node(첫 Element)를 시작으로 단방향으로 연결된 연결 리스트
     - 각 `Node`는 `value`와 `next` property를 지닌다.
   - 일자로 연결된 가장 간단한 형태의 연결 리스트이다.
 
-- 양방향 연결 리스트 (Doubly Linked List)
+- **양방향 연결 리스트 (Doubly Linked List)**
 ![Doubly Linked List](img/9.png)
   - 단방향 연결 리스트에 `prev`를 포함시켜 양방향으로 연결된 연결 리스트
-  - 이전 Node로 돌아갈 수 있어, 더 유연한 장점이 있다.
+  - 이전 Node로 돌아갈 수 있어, insert와 remove 연산에 유리하다.
 
 ## [실습] Linked List 직접 구현하기
 
 - JavaScript의 `class`를 이용해 Singly Linked List 및 Doubly Linked List 직접 구현하기
-- 구현 조건
-  - 단방향 연결 리스트 (Singly Linked List)
+- **구현 조건**
+  - **단방향 연결 리스트 (Singly Linked List)**
     - `value`와 `next` property를 지닌 `Node` 클래스를 구현한다.
     - `Node`를 이용하여 Singly Linked List를 구현한다.
     - 다음과 같은 리스트 ADT의 연산자를 구현해야 한다.
@@ -63,7 +63,7 @@
       1. 주어진 인덱스에 해당하는 요소에 접근하는 연산자
       1. 주어진 인덱스에 새로운 요소를 삽입하는 연산자
       1. 주어진 인덱스에 해당하는 요소를 제거하는 연산자
-  - 양방향 연결 리스트 (Doubly Linked List)
+  - **양방향 연결 리스트 (Doubly Linked List)**
     - `value`, `next`, 그리고 `prev` property를 지닌 `Node` 클래스를 구현한다.
     - `Node`를 이용하여 Doubly Linked List를 구현한다.
     - 다음과 같은 리스트 ADT의 연산자를 구현해야 한다.
@@ -75,7 +75,7 @@
       1. 주어진 인덱스에 해당하는 요소에 접근하는 연산자
       1. 주어진 인덱스에 새로운 요소를 삽입하는 연산자
       1. 주어진 인덱스에 해당하는 요소를 제거하는 연산자
-- 참조 코드
+- **참조 코드**
   - 단방향 연결 리스트
     - [기반 소스 코드](src/SLL/before.js)
     - [솔루션 코드](src/SLL/after.js)
