@@ -21,15 +21,15 @@ class ArrayList {
 
     }
 
-    getItem(index) {
+    access(index) {
 
     }
 
-    insertItem(index, value) {
+    insert(index, value) {
 
     }
 
-    removeItem(index) {
+    remove(index) {
 
     }
 }
