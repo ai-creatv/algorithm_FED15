@@ -42,7 +42,7 @@
   - 단방향(Singly Linked List) 또는 양방향(Doubly Linked List)
   - 각 요소는 값(Value)과 다음 요소를 *가르키는* 연결(Link)로 구성
   - 연결 리스트에서 각 연산의 복잡도
-    - `isEmpty()`: O(n)
+    - `isEmpty()`: O(1)
     - `prepend()`: O(1)
     - `append()`: O(n)
     - `setHead(index)`: O(n)
