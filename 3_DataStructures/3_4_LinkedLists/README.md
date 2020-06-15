@@ -28,7 +28,7 @@
 
 - 각 `Node`는 `value`와 연결된 다른 `Node`를 *가르키는* 연결(Link)로 구성
   - 연결 리스트에서 각 연산의 복잡도
-    - `isEmpty()`: O(n)
+    - `isEmpty()`: O(1)
     - `prepend()`: O(1)
     - `append()`: O(n)
     - `setHead(index)`: O(n)
