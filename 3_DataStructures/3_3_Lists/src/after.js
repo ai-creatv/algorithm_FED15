@@ -6,7 +6,7 @@ class ArrayList {
     }
     
     isEmpty() {
-        if (this.array.length === 0) {
+        if (this.length === 0) {
             return true;
         }
         else {
