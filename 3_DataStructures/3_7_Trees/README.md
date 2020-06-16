@@ -71,7 +71,6 @@
   - [기반 소스 코드](src/array/before.js)
   - [솔루션 코드](src/array/after.js)
 
-
 ## [실습] 노드 기반 완전 이진 트리 구현하기
 
 - JavaScript의 `class`를 이용해 직접 구현하기
