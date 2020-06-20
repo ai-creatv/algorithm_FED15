@@ -2,24 +2,72 @@
 
 ## 그래프란
 
+![그래프](img/1.png)
+
 - 객체 간에 짝을 이루는 구조를 나타내기 위한, 가장 유연한 자료 구조
 - Vertex(Node, Point)와 이를 잇는 Edge로 구성되어 있다.
 - Edge는 무향(Undirected) 또는 유향(Directed)일 수 있다.
-- Edge에는 무게(Weight)가 있을 수 있으며, 이는 연결의 강도를 나타낸다.
+- Edge에는 가중치(Weight)가 있을 수 있으며, 이는 연결의 강도를 나타낸다.
 
 ## 그래프와 트리의 관계
 
-- 트리는 무향 비순환 그래프 DAG (Directed Acyclic Graph)의 일종으로 볼 수 있다.
+![트리](img/2.png)
+
+- 트리는 방향성 비순환 그래프 DAG (Directed Acyclic Graph)의 일종으로 볼 수 있다.
   - 트리에는 회로(Cycle)이 없으며, 루트에서 리프 노드로의 방향성(Direction)이 존재한다.
 
 ## 그래프의 종류
 
 - 무향 그래프 (Undirected Graph)
+![무향 그래프](img/3.png)
 - 유향 그래프 (Directed Graph)
+![유향 그래프](img/4.png)
 - 다중 그래프 (Multigraph)
+![다중 그래프](img/5.png)
 
-## 그래프의 국소 구조
+## 그래프의 관련 용어
+
+![그래프의 부분 구조](img/6.png)
 
 - 경로 (Path)
 - 회로 (Cycle)
-- 
+- 부분 그래프 (Subgraph) - 어떤 그래프에 속하는 그래프
+- 연결 그래프 (Connected Graph) - 임의의 두 Vertex 사이에 경로가 존재하는 그래프
+
+## 그래프의 구현 방법
+
+![그래프의 구현](img/7.png)
+
+- 인접 리스트 (Adjacency List)
+![인접 리스트](img/8.png)
+- 인접 행렬 (Adjacency Matrix)
+![인접 행렬](img/9.png)
+
+## 그래프의 탐색 방법
+
+- 넓이 우선 탐색 (Breadth-First Search)
+![BFS](img/10.png)
+  - 두 Vertex 사이의 최단 경로 or 임의의 경로를 찾을 때 사용
+  - 트리와 달리 특정 Node의 방문 여부 `visited`를 검사해야 함
+  - Queue를 이용하여 반복적(Iterative)인 방법으로 손쉽게 구현 가능
+- 깊이 우선 탐색 (Depth-First Search)
+![DFS](img/11.png)
+  - 모든 Vertex를 방문하고자 할 때 주로 사용 (순회)
+  - 트리와 달리 특정 Node의 방문 여부 `visited`를 검사해야 함
+  - 재귀(Recursive) 함수를 이용하여 전위 순회의 형태로 구현
+
+## [실습] 인접 리스트 기반 그래프 구현하기
+
+- JavaScript의 `Array`와 `class`를 이용해 직접 구현하기
+- **구현 조건**
+  - `class`와 `Array`를 이용하여 그래프를 구현한다.
+  - 그래프의 Vertex 삽입과 삭제를 구현한다.
+    - Vertex 삽입 시, 연결될 인접점(Adjacency Vertices)를 입력 받는다
+  - 다음과 같은 그래프의 연산을 구현한다.
+    - 탐색 알고리즘: 시작 Vertex와 탐색 Value를 입력 받고, 탐색한 경로(Path)를 출력한다.
+      1. 넓이 우선 탐색 (Breadth-First Search; BFS)
+      1. 깊이 우선 탐색 (Depth-First Search; DFS)
+
+- **참조 코드**
+  - [기반 소스 코드](src/before.js)
+  - [솔루션 코드](src/after.js)
