@@ -65,7 +65,6 @@
     - 탐색 알고리즘: 시작 Vertex와 탐색 Value를 입력 받고, 탐색한 경로(Path)를 출력한다.
       1. 넓이 우선 탐색 (Breadth-First Search; BFS)
       1. 깊이 우선 탐색 (Depth-First Search; DFS)
-
 - **참조 코드**
   - [기반 소스 코드](src/before.js)
   - [솔루션 코드](src/after.js)
