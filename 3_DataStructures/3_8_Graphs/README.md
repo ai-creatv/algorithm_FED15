@@ -58,13 +58,13 @@
 - JavaScript의 `Array`와 `class`를 이용해 직접 구현하기
 - **구현 조건**
   - `class`와 `Array`를 이용하여 그래프를 구현한다.
-  - 그래프의 Vertex 삽입과 삭제를 구현한다.
+  - 그래프의 Vertex 삽입을 구현한다.
     - Vertex 삽입 시, 연결될 인접점(Adjacency Vertices)를 입력 받는다
     - 각 Vertex에 인접 리스트를 이용하여 인접점을 표현한다.
   - 다음과 같은 그래프의 연산을 구현한다.
-    - 탐색 알고리즘: 시작 Vertex와 탐색 Value를 입력 받고, 탐색한 경로(Path)를 출력한다.
-      1. 넓이 우선 탐색 (Breadth-First Search; BFS)
-      1. 깊이 우선 탐색 (Depth-First Search; DFS)
+    - 순회 알고리즘: 시작 Vertex를 입력받고 모든 Vertex를 순회하고, 그 순서를 출력한다.
+      1. 넓이 우선 순회 (Breadth-First Traversal)
+      1. 깊이 우선 순회 (Depth-First Traversal)
 - **참조 코드**
   - [기반 소스 코드](src/before.js)
   - [솔루션 코드](src/after.js)
