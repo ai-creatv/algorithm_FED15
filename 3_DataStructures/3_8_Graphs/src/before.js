@@ -1,7 +1,7 @@
 class Vertex {
-    constructor(value) {
+    constructor(value, adjList=new Array()) {
         this.value = value;
-        this.adjList = new Array();
+        this.adjList = adjList;
     }
 }
 
