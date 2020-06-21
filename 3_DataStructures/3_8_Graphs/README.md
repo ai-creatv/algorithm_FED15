@@ -18,16 +18,15 @@
 
 ## 그래프의 종류
 
+![그래프의 종류]](img/3.png)
+
 - 무향 그래프 (Undirected Graph)
-![무향 그래프](img/3.png)
 - 유향 그래프 (Directed Graph)
-![유향 그래프](img/4.png)
 - 다중 그래프 (Multigraph)
-![다중 그래프](img/5.png)
 
 ## 그래프의 관련 용어
 
-![그래프의 부분 구조](img/6.png)
+![그래프의 부분 구조](img/4.png)
 
 - 경로 (Path)
 - 회로 (Cycle)
@@ -36,22 +35,20 @@
 
 ## 그래프의 구현 방법
 
-![그래프의 구현](img/7.png)
-
-- 인접 리스트 (Adjacency List)
-![인접 리스트](img/8.png)
-- 인접 행렬 (Adjacency Matrix)
-![인접 행렬](img/9.png)
+- 인접 리스트 (Adjacency List) - Sparse할 경우 유리함
+![인접 리스트](img/5.png)
+- 인접 행렬 (Adjacency Matrix) - Dense할 경우 유리함
+![인접 행렬](img/6.png)
 
 ## 그래프의 탐색 방법
 
 - 넓이 우선 탐색 (Breadth-First Search)
-![BFS](img/10.png)
+![BFS](img/7.png)
   - 두 Vertex 사이의 최단 경로 or 임의의 경로를 찾을 때 사용
   - 트리와 달리 특정 Node의 방문 여부 `visited`를 검사해야 함
   - Queue를 이용하여 반복적(Iterative)인 방법으로 손쉽게 구현 가능
 - 깊이 우선 탐색 (Depth-First Search)
-![DFS](img/11.png)
+![DFS](img/8.png)
   - 모든 Vertex를 방문하고자 할 때 주로 사용 (순회)
   - 트리와 달리 특정 Node의 방문 여부 `visited`를 검사해야 함
   - 재귀(Recursive) 함수를 이용하여 전위 순회의 형태로 구현
