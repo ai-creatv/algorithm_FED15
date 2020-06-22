@@ -1,7 +1,8 @@
 function solution(p) {
-    return correctParenthesis(p);
+    const answer = '';
+    return answer;
 }
 
-console.log(solution("(()())()"));
-console.log(solution(")("));
-console.log(solution("()))((()"));
+console.log(solution('(()())()'));
+console.log(solution(')('));
+console.log(solution('()))((()'));
