@@ -18,7 +18,7 @@ function isCorrect(s){
         }
     }
     
-    if (balance == 0) {
+    if (balance === 0) {
         return true;
     }
     else {
@@ -35,7 +35,7 @@ function correctParenthesis(s){
     let u, v;
     for (let i = 0; i < s.length; i++) {
         let c = s[i];
-        if (c == '(') {
+        if (c === '(') {
             balance++;
         }
         else {
