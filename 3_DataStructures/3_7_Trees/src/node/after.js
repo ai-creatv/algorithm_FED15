@@ -21,7 +21,7 @@ class BinaryTree {
             }
         }
 
-        this.head = nodeArray[0];
+        this.root = nodeArray[0];
     }
 
     preorder() {
@@ -36,7 +36,7 @@ class BinaryTree {
                 recursive(node.right);
             }
         }
-        recursive(this.head);
+        recursive(this.root);
         console.log(s);
     }
 
@@ -52,7 +52,7 @@ class BinaryTree {
                 recursive(node.right);
             }
         }
-        recursive(this.head);
+        recursive(this.root);
         console.log(s);
     }
 
@@ -68,14 +68,14 @@ class BinaryTree {
             }
             s += `${node.value} `;
         }
-        recursive(this.head);
+        recursive(this.root);
         console.log(s);
     }
 
     bfs(value) {
         const queue = new Array();
 
-        queue.push(this.head);
+        queue.push(this.root);
         while (queue.length > 0) {
             const node = queue.shift();
 
@@ -113,7 +113,7 @@ class BinaryTree {
                 recursive(node.right);
             }
         }
-        recursive(this.head);
+        recursive(this.root);
         
         return isFound;
     }

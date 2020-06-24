@@ -55,6 +55,11 @@ face에 해당하는 의상이 crow_mask, blue_sunglasses, smoky_makeup이므로
 3. smoky_makeup
 ```
 
+### 참조 코드
+
+- [기반 소스 코드](src/before.js)
+- [솔루션 코드](src/after.js)
+
 -------
 
 ## 문제 풀이
