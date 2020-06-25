@@ -7,9 +7,9 @@ function solution(skill, skill_trees) {
         let noMoreFlag = false;
         
         for (let a of skill) {
-            let Index = tree.indexOf(a);
+            let currIndex = tree.indexOf(a);
             
-            if (Index === -1) {
+            if (currIndex === -1) {
                 noMoreFlag = true;
                 continue;
             }
@@ -18,12 +18,12 @@ function solution(skill, skill_trees) {
                 continue loop;
             }
             
-            if (Index < lastIndex) {
+            if (currIndex < lastIndex) {
                 continue loop;
             }
-            lastIndex = Index;
+            lastIndex = currIndex;
         }
-        console.log(tree);
+        
         answer++;
     }
     
