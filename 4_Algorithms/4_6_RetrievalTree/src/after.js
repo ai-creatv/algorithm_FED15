@@ -8,11 +8,11 @@ class Node {
 
 class Trie {
     constructor() {
-        this.head = new Node(null);
+        this.root = new Node(null);
     }
     
     insert(word) {
-        let curr = this.head;
+        let curr = this.root;
         
         for (let c of word) {
             if (curr.child.has(c) === false) {
@@ -26,7 +26,7 @@ class Trie {
     }
     
     countMatch(query) {
-        let curr = this.head;
+        let curr = this.root;
         
         for (let c of query) {
             if (c === '?') {
