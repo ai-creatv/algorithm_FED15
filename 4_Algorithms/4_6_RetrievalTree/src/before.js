@@ -8,7 +8,7 @@ class Node {
 
 class Trie {
     constructor() {
-        this.head = new Node(null);
+        this.root = new Node(null);
     }
     
     insert(word) {
