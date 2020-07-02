@@ -57,11 +57,11 @@
 
 ### 동적 계획법의 예
 
-피보나치 수열 (`f(n) = f(n-1) + f(n-2), f(0) = 0, f(1) = 1`)
+피보나치 수열 (`f(n) = f(n-1) + f(n-2), f(1) = 0, f(2) = 1`)
 
 ```javascript
 const fibo = new Map();
-fibo.set(0, 1);
+fibo.set(1, 0);
 fibo.set(2, 1);
 
 for (let i = 1; i < 1001; i++) {
