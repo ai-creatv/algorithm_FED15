@@ -76,3 +76,7 @@
   - 전체 와일드카드 (`?????`) - 단어 길이별로 별도의 Trie 구성. Trie에 삽입된 모든 단어의 개수 저장
   - 후위 와일드카드 (`fro??`) - Node별로 하위 Leaf Node의 개수를 저장
   - 전위 와일드카드 (`??odo`) - 단어를 거꾸로 입력하는 별도의 Trie 구성
+
+## 문제 출처
+
+<https://programmers.co.kr/learn/courses/30/lessons/60060>

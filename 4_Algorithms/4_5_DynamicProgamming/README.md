@@ -72,3 +72,7 @@ for (let i = 1; i < 1001; i++) {
 }
 console.log(fibo.get(1000));
 ```
+
+## 문제 출처
+
+<https://programmers.co.kr/learn/courses/30/lessons/12900>

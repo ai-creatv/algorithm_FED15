@@ -53,3 +53,7 @@ pop 장르는 3,100회 재생되었으며, pop 노래는 다음과 같습니다.
 
 - Hash Table을 이용하여 장르별 재생 횟수를 계산한다.
 - JavaScript Array.sort()를 활용하여 play 수가 많은 순으로 정렬한다.
+
+## 문제 출처
+
+<https://programmers.co.kr/learn/courses/30/lessons/42579>

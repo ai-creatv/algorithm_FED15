@@ -37,3 +37,7 @@
 
 - [기반 소스 코드](src/before.js)
 - [솔루션 코드](src/after.js)
+
+## 문제 출처
+
+<https://programmers.co.kr/learn/courses/30/lessons/49993>
